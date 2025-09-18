@@ -669,7 +669,9 @@ span {
         position: fixed;
     }
     header .navbar {
+        flex-wrap: nowrap;
         display: flex;
+        align-items: center;
         width: 100%;
         position: absolute;
         top: 60px;
