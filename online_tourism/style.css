@@ -667,6 +667,7 @@ span {
     header {
         height: 70px;
         position: fixed;
+        width: 100%;
     }
     header .navbar {
         flex-wrap: nowrap;
@@ -693,6 +694,7 @@ span {
         border-radius: .5rem;
         color: #070606;
         text-align: center;
+        width: 100%;
     }
 }
 
