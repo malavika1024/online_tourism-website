@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,10 +22,10 @@
     color: #fff;
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
-  
     width: 100%;
     height: 100%;
     font-size: 62.5%;
@@ -39,9 +39,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: rgb(12, 3, 3);
+    background: #333;
     z-index: 1000;
-    padding: 1rem 2 rem;
+    padding: 1rem 2rem;
 }
 
 section {
@@ -86,7 +86,8 @@ span {
 .logo {
     font-size: 2.5rem;
     font-weight: bolder;
-    color: rgb(182, 177, 177);;
+    color: rgb(182, 177, 177);
+    ;
     text-transform: uppercase;
     text-decoration: none;
     margin: 2px;
@@ -98,7 +99,8 @@ span {
 }
 
 #menu-bars {
-    color: rgb(182, 177, 177);;
+    color: rgb(182, 177, 177);
+    ;
     border-radius: .5rem;
     font-size: 3rem;
     padding: .5rem;
@@ -113,13 +115,14 @@ span {
 
 .navbar {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
-    height: 50px;
+
+
 }
 
 .navbar a {
-    color:rgb(182, 177, 177);
+    color: rgb(182, 177, 177);
     font-size: 2rem;
     margin: 0 .8rem;
     font-family: 'Times New Roman', Times, serif;
@@ -132,7 +135,8 @@ span {
 
 .icons i {
     font-size: 2.5rem;
-    color: rgb(182, 177, 177);;
+    color: rgb(182, 177, 177);
+    ;
     cursor: pointer;
     margin-right: 2rem;
     margin-top: 12px;
@@ -177,7 +181,7 @@ span {
 }
 
 
-.login-form-container{
+.login-form-container {
     position: fixed;
     top: -120%;
     left: 0;
@@ -187,7 +191,7 @@ span {
     background: rgba(0, 0, 0, .7);
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .login-form-container.active {
@@ -195,21 +199,22 @@ span {
 }
 
 
-.login-form-container label{
+.login-form-container label {
     font-size: 16px;
     padding: 5px;
     width: 100%;
-    color: var(--orange);  
+    color: var(--orange);
 }
 
-.login-form-container #remember{
-   margin-top: 10px;  
+.login-form-container #remember {
+    margin-top: 10px;
 }
-.login-form-container .remember{
+
+.login-form-container .remember {
     display: flex;
     font-size: 10px;
     width: 100%;
-    color: var(--orange); 
+    color: var(--orange);
 }
 
 .login-form-container form {
@@ -250,7 +255,7 @@ span {
 }
 
 .login-form-container form p {
-    padding: .3rem ;
+    padding: .3rem;
     font-size: 1.5rem;
     color: #666;
 }
@@ -354,7 +359,8 @@ span {
     padding: 1rem 0;
     color: #666;
 }
-.packages{
+
+.packages {
     background-color: #ece9e9;
 }
 
@@ -446,7 +452,7 @@ span {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
 }
 
-.gallery{
+.gallery {
     background-color: #ece9e9;
 }
 
@@ -538,53 +544,99 @@ span {
 
 }
 
+.contact {
+    background-color: #ece9e9;
+    padding: 40px 20px;
+}
+
 .contact .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
+    gap: 2rem;
 }
 
-.contact .row .image {
-    flex: 1 1 45%;  
+.contact .get-in {
+    flex: 1 1 40%;
+    margin-left: 50px;
 }
 
-.contact .row .image img {
-    width: 100%;
-    border-radius: 1rem;
+.contact .get-in h1 {
+    font-size: 32px;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.contact .c-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact .c-logo .info-box {
+font-size: 16px;
+color: #333;
+margin-left: 100px;
+}
+
+.contact .c-logo .info-box i{
+font-size: 20px;
+color: var(--orange);
+}
+
+.contact .c-logo .info-box span {
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+}
+
+.contact .c-logo p {
+    font-size: 10px;
+    padding-bottom: 30px;
 }
 
 .contact .row form {
-    flex: 1 1 45%;
-    padding: 2rem;
+    flex: 1 1 36%;
+    padding: 20px;
+    margin: 20px;
     box-shadow: 0 1rem 2rem rgba(143, 72, 72, 0.1);
     border-radius: 1rem;
     background-color: #fff;
 }
 
 .contact .row form .inputBox {
-   margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .contact .row form .inputBox input {
-    width: 40%;
+    width: 100%;
     margin: 1rem 0;
     padding: 1rem;
     font-size: 1.7rem;
-    margin-right: 4rem; 
+    margin-right: 4rem;
     color: #333;
     background: #f7f7f7;
     text-transform: none;
 }
 
 .contact .row form textarea {
-    height: 15rem;
+    height: 8rem;
     resize: none;
     width: 100%;
+    background: #f7f7f7;
 }
+.contact form .btn{
+    margin-top: 15px;
+    display: inline-block;
+    padding: 12px 20px;
+    background:var(--orange);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
 
-.brand-container {
-    text-align: center;
 }
 
 .footer {
@@ -654,6 +706,7 @@ span {
     header {
         padding: 2rem;
     }
+
     section {
         padding: 2rem;
     }
@@ -664,37 +717,57 @@ span {
     #menu-bars {
         display: block;
     }
-    header {
-        height: 70px;
-        position: fixed;
-        width: 100%;
-    }
+
     header .navbar {
-        flex-wrap: nowrap;
-        display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 100%;
         right: 0;
         left: 0;
-        background: #b5b6b7;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-        padding: 1rem 2rem;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path .3s ease;
+        background: #333;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 1001;
     }
 
     .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 
     header .navbar a {
         display: block;
-        border-radius: .5rem;
-        color: #070606;
-        text-align: center;
         width: 100%;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    header .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .6);
+        display: none;
+        z-index: 900;
+    }
+
+    .overlay.active {
+        display: block;
     }
 }
 
@@ -702,20 +775,47 @@ span {
     html {
         font-size: 50%;
     }
+
     .heading span {
         font-size: 2.5rem;
     }
 }
 
+/* * {
+    border: solid black;
+} */
+
 @media (max-width: 768px) {
+
     .contact .row {
         flex-direction: column;
     }
-    .contact .row .image,
+
+
+    .contact .get-in,
     .contact .row form {
         flex: 1 1 100%;
+        margin-right: 30;
+      
     }
-    .contact .row form .inputBox input {
-        width: 100%;
+/* 
+*{
+    border: solid black ;
+} */
+    .contact .get-in h1 {
+        font-size: 24px;
+        /* text-align: center; */
+        padding-bottom: 20px;
+        text-align: start;
+        margin: 0;
+       
     }
+
+     .contact .get-in .info-box{
+         margin-right: 130px;
+        margin: 0;
+     }
+.contact6 .c-logo{
+    align-items: flex-start;
+}
 }

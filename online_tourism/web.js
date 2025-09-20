@@ -7,19 +7,39 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
-window.onscroll = () => {
+
+//close all on scroll
+// window.onscroll = () => {
+//     menu.classList.remove('fa-times');
+//     navbar.classList.remove('active');
+//     searchBtn.classList.remove('fa-times');
+//     searchBar.classList.remove('active');
+//     loginForm.classList.remove('active');
+// }
+
+//toggle navbar  menu
+menu.addEventListener('click', () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+    //close search bar when menu opens
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
-    loginForm.classList.remove('active');
-}
 
-menu.addEventListener('click', () => {
-    navbar.classList.toggle('active');
 });
 
+let navLinks = document.querySelectorAll('.navbar a');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+        searchBtn.classList.remove('fa-times');
+        searchBar.classList.remove('active');
+    });
+});
+
+//toggle search bar
 searchBtn.addEventListener('click', () => {
+    searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');
 });
 
@@ -36,12 +56,12 @@ var revieSwiper = new Swiper(".review-swiper", {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: false,
     },
 
     breakpoints: {
-    
+
         640: {
             slidesPerView: 1,
         },
@@ -54,27 +74,4 @@ var revieSwiper = new Swiper(".review-swiper", {
     },
 });
 
-var brandswiper = new Swiper(".brand-swiper", {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-    },
-    breakpoint: {
-        450: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        991: {
-            slidesPerView: 3,
-        },
-        1200: {
-            slidesPerView: 4,
-        },
-    },
-});
 
